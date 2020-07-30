@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Col } from "react-bootstrap";
 
-export default function SearchOptions() {
+export default function SearchOptions({ params, onParamChange }) {
   return (
     <Form className="mb-4">
       <Form.Row>
