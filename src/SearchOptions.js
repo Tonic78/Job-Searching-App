@@ -7,11 +7,21 @@ export default function SearchOptions({ params, onParamChange }) {
       <Form.Row>
         <Form.Group as={Col}>
           <Form.Label>Description</Form.Label>
-          <Form.Control onChange={} value={} name="description" type="text" />
+          <Form.Control
+            onChange={onParamChange}
+            value={params.description}
+            name="description"
+            type="text"
+          />
         </Form.Group>
         <Form.Group as={Col}>
           <Form.Label>Location</Form.Label>
-          <Form.Control onChange={} value={} name="location" type="text" />
+          <Form.Control
+            onChange={onParamChange}
+            value={params.location}
+            name="location"
+            type="text"
+          />
         </Form.Group>
       </Form.Row>
     </Form>
