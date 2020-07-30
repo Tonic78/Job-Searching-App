@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import useFetchJobs from "./useFetchJobs";
 import Job from "./Job";
 import JobPagination from "./JobPagination";
+import SearchOptios from "./SearchOptions";
 
 function App() {
   const [params, setParams] = useState({});
